@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body class="container">
+    <header class="header">
+        <h1 class="text-center">bienvenido</h1>
+    </header>
+    <form action="" id="formDatos" class="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="inputNombre" placeholder="Ingresa tu nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="inputApellido" placeholder="Ingresa tu Apellido" required>
+
+        <label for="dni">Dni:</label>
+        <input type="number" id="inputDni" placeholder="Dni" required>
+
+
+        <label for="nacimiento">Nacimiento:</label>
+        <input type="date" id="inputNacimiento" placeholder="Fecha de Nacimiento" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="inputEdad" placeholder="Ingresa tu Edad" required>
+
+        <label for="pais">Pais</label>
+        <input type="text" id="inputPais" placeholder="Nacionalidad" required>
+
+        <label for="provincia">Provincia</label>
+        <input type="text" id="inputProvincia" placeholder="Provincia" required>
+
+        <label for="ciudad">ciudad</label>
+        <input type="text" id="inputCiudad" placeholder="Localidad" required>
+
+        <label for="direccion">Direccion:</label>
+        <input type="text" id="inputDireccion" placeholder="Direccion exacta" required>
+
+        <label for="mail">Mail:</label>
+        <input type="text" id="inputMail" placeholder="Correo Electronico" required>
+
+        <label for="telefono">Telofono:</label>
+        <input type="number" id="inputTelefono" placeholder="Telofono" required>
+
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="inputCargo" placeholder="Tu Jerarquia o Cargo" required>
+
+        <label for="numeroCargo">Numero Cargo:</label>
+        <input type="number" id="inputNumeroCargo" placeholder="Ingresa tu numero de cargo" required>
+
+        <label for="InicioLaboral">Inicio Laboral:</label>
+        <input type="date" id="inputInicioLaboral" placeholder="Fecha de Inicio Laboral" required>
+
+        <label for="obraSocial">Obra Social:</label>
+        <input type="text" id="inputObraSocial" placeholder="Cual es tu Obra Social?" required>
+
+        <label for="numeroObraSocial">Numero de Afiliado:</label>
+        <input type="number" id="inputNumeroObraSocial" placeholder="cual es el numero de Afiliado?" required>
+
+
+        <input type="button" value="Enviar"  class="btn-dark" onclick="tomarOnclick()">
+        <input type="button" value="Cancelar" id="btnCancelar2" class="btn-dark">
+        <input type="button" value="Nueva Consulta" id="btnNuevaConsulta" class="btn-dark">
+        <a href="../index.html" class="btn-dark">Volver al Home</a>
+    </form>
+    <main class="main__propio">
+        <div class=""  id="tablas">
+            <table id="tabla1" class="table table-dark table-striped-columns tabla1">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Dni</th>
+                        <th>Nacimiento</th>
+                        <th>Edad</th>
+                    </tr>
+                </thead>
+            </table>
+            <br>
+            <table class="table table-dark table-striped-columns tabla2" id="tabla2">
+                <thead>
+                    <tr>
+                        <th>Pais</th>
+                        <th>Provincia</th>
+                        <th>Ciudad</th>
+                        <th>Direccion</th>
+                        <th>Mail</th>
+                        <th>Telefono</th>
+                    </tr>
+                </thead>
+            </table>
+            <br>
+            <table class="table table-dark table-striped-columns tabla3" id="tabla3">
+                <thead>
+                    <tr>
+                        <th>Cargo</th>
+                        <th>Numero de Cargo</th>
+                        <th>Fecha de Inicio</th>
+                        <th>Obra Social</th>
+                        <th>Numero</th>
+                    </tr>
+                </thead>
+            </table>
+</div>
+
+            <p class="btn-primary" id="textFinal"></p>
+        </div>
+        <form id="miFormulario">
+            <h3>Aquí vas a consultar y confirmar tus Licencias Anuales</h3>
+            <label for="licenciaAnterior">1) ¿Cuál fue el último año que saliste de Vacaciones?</label>
+            <input type="number" id="licenciaAnterior" name="licenciaAnterior"  min="2016" max="2022" oninput="mostrarAñosDisponibles(this.value)"><br><br>
+            <p id="listadoDeAños"></p>
+            <p>¡IMPORTANTE!: se autoseleccionara tu proximo año de Licencia</p>
+            
+            <label for="mesDelAño">3) Elegir un mes del año:</label>
+            <select id="mesDelAño" name="mesDelAño" required>
+              <option value="enero">Enero</option>
+              <option value="febrero">Febrero</option>
+              <option value="marzo">Marzo</option>
+              <option value="abril">Abril</option>
+              <option value="mayo">Mayo</option>
+              <option value="junio">Junio</option>
+              <option value="julio">Julio</option>
+              <option value="agosto">Agosto</option>
+              <option value="septiembre">Septiembre</option>
+              <option value="octubre">Octubre</option>
+              <option value="noviembre">Noviembre</option>
+              <option value="diciembre">Diciembre</option>
+            </select><br><br>
+        
+            <label for="quincenaSeleccionada">4) Elige en qué Quincena deseas salir de Licencia</label>
+            <select name="quincenaSeleccionada" id="quincenaSeleccionada">
+              <option  value="1-15">Desde el 1 al 15</option>
+              <option  value = "15-30" >Desde el 15 al 30</option>
+            </select>
+            <input type="submit" value="Enviar" id="btnEnviarForm">
+            <input type="button" value="Cancelar" id="btnCancelarForm">
+            <p id="mensajeFinal"></p>
+          </form>
+  
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../js/logica-01.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

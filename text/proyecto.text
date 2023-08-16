@@ -1,0 +1,32 @@
+Un proyecto interes
+
+Nombre del proyecto: "Solicitud de Licencias WebApp"
+
+Descripción:
+El objetivo de esta aplicación es permitir que los empleados de una empresa o institución soliciten licencias (vacaciones, permisos, etc.) de manera más organizada y eficiente. La aplicación debe facilitar la presentación de solicitudes por parte de los empleados y la gestión de las mismas por parte de los administradores.
+
+Funcionalidades principales:
+
+1  Registro de usuarios: Los empleados deben poder registrarse en la plataforma proporcionando sus datos básicos, como nombre, correo electrónico y contraseña.
+
+2  Inicio de sesión: Los usuarios registrados deben poder acceder a la aplicación mediante sus credenciales.
+
+3  Formulario de solicitud: Una vez que los usuarios han iniciado sesión, podrán completar un formulario de solicitud de licencia. El formulario debe permitir seleccionar el tipo de licencia (vacaciones, permisos, etc.), fechas de inicio y fin, motivo y cualquier otra información relevante.
+
+4  Estado de las solicitudes: Los empleados deben poder ver el estado actual de sus solicitudes (pendiente, aprobada, rechazada, etc.) en su panel de control.
+
+5  Gestión de solicitudes: Los administradores de la aplicación deben tener un panel especial donde puedan revisar todas las solicitudes recibidas y aprobar o rechazar cada una de ellas. También podrán agregar comentarios y notificar al empleado sobre la decisión.
+
+6  Notificaciones: La aplicación debe enviar notificaciones por correo electrónico o mediante un sistema interno para informar a los empleados sobre el estado de su solicitud (aprobada, rechazada, etc.).
+
+7  Calendario: Implementar un calendario donde se muestren las solicitudes aprobadas y las fechas disponibles para solicitar nuevas licencias.
+
+8  Reportes: Permitir a los administradores generar informes sobre las solicitudes recibidas y su estado.
+
+Tecnologías sugeridas:
+
+Frontend: HTML, CSS, JavaScript, React o Vue.js (frameworks de JavaScript para construir la interfaz de usuario).
+Backend: Node.js con Express (para crear el servidor y manejar las solicitudes HTTP).
+Base de datos: MongoDB o MySQL (para almacenar la información de los usuarios y las solicitudes).
+Autenticación: Implementar la autenticación de usuarios con JSON Web Tokens (JWT) para mantener la seguridad en las rutas protegidas.
+Recuerda que este es solo un esquema básico, y puedes ampliar o personalizar las funcionalidades según tus preferencias o los requisitos específicos del proyecto. ¡Buena suerte con tu proyecto de solicitud de licencias en JavaScript!
