@@ -50,10 +50,17 @@
   padding: 2%;
   margin: 1%;
 }
+.formularioCrearCuenta{
+  display: none;
+}
+.mostrar{
+  display: block;
+}
+
 .main__propio .formulario {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: ceanter;
   justify-content: center;
   align-items: center;
   padding: auto;

@@ -1,19 +1,43 @@
+//EN ESTA SECCION ESTARA EL CODIGO DE CREAR CUENTA;
+// cuando el usuario apriete el btn de crear cuenta , se ejecutara la funcion crearCuenta; se mostrara el div que contiene ese codigo, 
 
-function bienvenida(e) {
-  e.preventDefault(); // Evitar el envío del formulario
+function crearCuenta(){
+  mostrarFormulario();
 
-  const nuevoUsuario = document.getElementById("nuevoUsuario");
-  const userNew = nuevoUsuario.value;
-  const crearContraseña = document.getElementById("crearContraseña");
-  const contraseña = crearContraseña.value;
-
-  alert(`¡Hola ${userNew}! Tu registro fue exitoso, tu contraseña es: ${contraseña}`);
-  navegar();
+}
+function mostrarFormulario() {
+  const formulario = document.getElementById("formularioRegistro");
+  formulario.classList.add("mostrar");
+  formulario.classList.add("ocultarBtn")
 }
 
+// luego en los inputs se cargaran los valores y al hacer click en el btn de enviar ,
+// se ejecutara la funcion de aceptaryEnviar() que ya tiene otra funcion adentro (bienvenida)
+function btnAceptaryEnviar(e){
+  e.preventDefault();
+  bienvenida();
+  alert("enviar")
+}
+function bienvenida(e) {
+  e.preventDefault(); // Evitar el envío del formulario
+  userNew = document.getElementById("nuevoUsuario").value;
+  contraseña = document.getElementById("crearContraseña").value;
+  repetirContraseña = document.getElementById("repetirContraseña").value;
+  alert(`¡Hola ${userNew}! Tu registro fue exitoso, tu contraseña es: ${contraseña}`);
+  validacion()
+}
+//aqui debemos realizar las validaciones para ejecutar las funciones de ingresos si los datos son correctos 
+function validacion() {
+  if (contraseña == repetirContraseña) {
+    navegar();//si esta correcto , se ejecutara la funcion de navegar(); esta nos lleva a la segunda pages
+  } else {
+    alert("Las Contraseñas no coinciden")
+  }
+}
 function navegar() {
   window.location.href = "./pages/page-1.html";
 }
+
 
 function resetear(e) {
   e.preventDefault(); // Evitar el restablecimiento del formulario
@@ -33,7 +57,8 @@ const cancelar =  document.getElementById("btnCancelar").addEventListener("click
 
 
 
-// 
+// realizar una base de datos para recuperar los valores ingresados por el usuario
+
 
 // let letra = "c" // Le asignamos con un string que va con comillas
 // let letras = "d"
