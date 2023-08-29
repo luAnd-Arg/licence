@@ -50,10 +50,10 @@
   padding: 2%;
   margin: 1%;
 }
-.formularioCrearCuenta{
+.formularios {
   display: none;
 }
-.mostrar{
+.mostrar {
   display: block;
 }
 

@@ -16,25 +16,29 @@
         <h2> Se trata de un programa para solicitar leciencias </h2>
         <main class="main__propio">
             <h3>Registro de Usuario</h3>
-            <form action="" id="iniciarSesion-crearCuenta">
-            <label for="inciarSesion"></label>
-            <input type="button" value="Iniciar Sesión" onclick="iniciarSesion()">
-            </form>
-            <label for="CrearCuenta"></label>
-            <input type="button" value="Crear Cuenta" onclick="crearCuenta()" id="crearCuenta">
+            <form action="" id="botonera">
+            <input type="button" value="Iniciar Sesión" id="btnInciarSesion">
+            <input type="button" value="Crear Cuenta"  id="btnCrearCuenta">
+        </form>
             
-            <form id="formularioRegistro" class="formularioCrearCuenta">
-                <label for="nuevoUsuario">Nuevo Usuario:</label>
-                <input type="text" id="nuevoUsuario" placeholder="solo letras" required>
-                <label for="crearContraseña">Crear Contraseña:</label>
-                <input type="password" id="crearContraseña" placeholder="Ingrese su contraseña" required>
-                <label for="repetirContraseña">Repetir Contraseña:</label>
+            <form id="formularioRegistro" class="formularios">
+                <input type="text" id="nuevoUsuario" placeholder=" ingrese un usuario" required>
+                <input type="password" id="crearContraseña" placeholder="Ingrese una contraseña" required>
                 <input type="password" id="repetirContraseña" placeholder="repetir contraseña" required>
-                <input type="submit" value="Aceptar y Enviar" id="btnAceptaryEnviar" class="btn btn-secondary" onclick="btnAceptaryEnviar()" >
+                <input type="submit" value="Aceptar y Enviar" id="btnAceptarYEnviar" class="btn btn-secondary">
                 <input type="reset" value="Cancelar" id="btnCancelar" class="btn btn-dark">
             </form>
+            <div id="formularioInicioSesion" class="formularios">
+                <label for="inputUsuarioInicioSesion"></label>
+                <input type="text" name="usuario" placeholder="ingrese su usuario" id="inputUsuarioInicioSesion">
+                <label for="inputContraseñaInicioSesion"></label>
+                <input type="password" name="contraseña" placeholder="ingrese su contraseña" id="inputContraseñaInicioSesion">
+                <button type="submit" id="btnIngresarSesion">Ingresar</button>
+                <button type="reset">Cancelar</button>
+            </div>
         </main>
         <section class="section3">
+            <div id="divData"></div>
         </section>
         <section class="section4"></section>
         <aside class="publicidad"></aside>
@@ -42,7 +46,6 @@
        <p>programador Andrada Lucas</p>
         </footer>
         <script src="./js/logica.js"></script>
-        <script src="./js/logica-01.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
