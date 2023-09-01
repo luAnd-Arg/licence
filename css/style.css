@@ -56,7 +56,12 @@
 .mostrar {
   display: block;
 }
+.mensaje{
 
+  text-align: center;
+  font: 600;
+  color: black;
+}
 .main__propio .formulario {
   display: flex;
   flex-direction: column;
