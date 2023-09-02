@@ -295,33 +295,3 @@ function validarCamposCompletados() {
         return true; // Permitir avance
   }
 }};
-  
-
-
-
-  
-  // // Función para mostrar el mensaje de bienvenida
-  // async function mensajeDeBienvenida() {
-  //   // Simular un retardo para mostrar el mensaje asíncronamente
-  //   await new Promise(resolve => setTimeout(resolve, 1000));
-  
-  //   const usuariosString = localStorage.getItem("usuarios");
-  //   const usuarios = JSON.parse(usuariosString);
-  
-  //   if (usuarios && usuarios.length > 0) {
-  //     const mensajeContainer = document.getElementById("mostrarMensajeBienvenida");
-  
-  //     usuarios.forEach((usuario) => {
-  //       const parrafo = document.createElement("p");
-  //       parrafo.textContent = `${usuario.usuario} ¡Bienvenido!`; // Cambio aquí: usuario.usuario en lugar de usuario.nombre
-  //       mensajeContainer.appendChild(parrafo);
-  //     });
-  //   } else {
-  //     console.log("No se encontraron usuarios almacenados.");
-  //   }
-  // }
-  
-  // // Llamada a la función mensajeDeBienvenida cuando la página se carga
-  // document.addEventListener("DOMContentLoaded", () => {
-  //   mensajeDeBienvenida();
-  // });
